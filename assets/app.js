@@ -22,9 +22,15 @@
     if (window.SITE_CONTENT) return window.SITE_CONTENT;
     const out = {};
     await Promise.all(FILES.map(async (f) => {
-      const r = await fetch(`content/${f}.json`, { cache: "no-cache" });
-      // L'espace d'administration enregistre les images en "/images/..." : on les rend relatives.
-      out[f] = JSON.parse(await r.text(), (k, v) => (typeof v === "string" && v.startsWith("/images/") ? v.slice(1) : v));
+      // Un fichier vide ou abîmé ne doit pas casser tout le site : on l'affiche comme vide.
+      try {
+        const r = await fetch(`content/${f}.json`, { cache: "no-cache" });
+        // L'espace d'administration enregistre les images en "/images/..." : on les rend relatives.
+        out[f] = JSON.parse(await r.text(), (k, v) => (typeof v === "string" && v.startsWith("/images/") ? v.slice(1) : v)) || {};
+      } catch (e) {
+        console.warn(`content/${f}.json illisible`, e);
+        out[f] = {};
+      }
     }));
     return out;
   }
@@ -183,7 +189,7 @@
 
     equipe(c) {
       return head("Le bureau", "L'équipe", "Les étudiants qui font tourner C'CNAM Strasbourg cette année.") + `
-      <div class="wrap"><div class="team">${c.equipe.membres.map((m) => `
+      <div class="wrap"><div class="team">${(c.equipe.membres || []).map((m) => `
         <div class="member">
           <div class="avatar">${safeUrl(m.photo) ? `<img src="${esc(m.photo)}" alt="${esc(m.nom)}" loading="lazy">` : esc(initials(m.nom))}</div>
           <div><h3>${esc(m.nom)}</h3><p>${esc(m.role)}</p></div>
