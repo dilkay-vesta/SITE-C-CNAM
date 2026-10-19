@@ -1,0 +1,58 @@
+{
+  "nom": "C'CNAM Strasbourg",
+  "slogan": "On étudie, on se rencontre, on crée du réseau et on profite. Hopla !",
+  "accroche": "L'association étudiante du CNAM Strasbourg, ouverte à toutes les filières.",
+  "qui_sommes_nous": [
+    "C'CNAM Strasbourg est l'association étudiante du CNAM Strasbourg. Notre objectif est simple : améliorer la vie étudiante, sur le campus comme en dehors, et faire en sorte que les années d'études soient aussi l'occasion de créer des souvenirs, des rencontres et des opportunités.",
+    "Ouverte à toutes les filières du CNAM, l'association souhaite rassembler les étudiants, peu importe leur formation ou leur niveau d'études. Parce qu'entre les cours, le travail et l'alternance, on mérite aussi de profiter de la vie étudiante !"
+  ],
+  "objectifs": [
+    {
+      "titre": "Faire vivre le campus",
+      "texte": "Nous voulons rendre la vie étudiante plus dynamique en proposant des événements tout au long de l'année : soirées étudiantes, activités, moments de rencontre et autres projets pour se retrouver en dehors des cours."
+    },
+    {
+      "titre": "Créer des souvenirs ensemble",
+      "texte": "Au programme : des soirées, des sorties et, pourquoi pas, un WEI (week-end d'intégration) pour apprendre à se connaître autrement qu'entre deux cours. L'idée est de créer une vraie cohésion entre les étudiants et les différentes promotions. Hopla, les études c'est important, mais les souvenirs qu'on se crée pendant, ça compte aussi !"
+    },
+    {
+      "titre": "Développer notre réseau",
+      "texte": "La vie étudiante, c'est aussi préparer la suite. Nous souhaitons participer à des forums, rencontrer des professionnels, développer des partenariats et créer des occasions d'échanger avec les entreprises et les acteurs du monde professionnel. Que ce soit pour découvrir des métiers, trouver des opportunités ou simplement élargir son réseau, chaque rencontre peut être utile."
+    }
+  ],
+  "vision": [
+    "Nous voulons faire de C'CNAM Strasbourg une association accessible, dynamique et représentative de tous les étudiants du CNAM.",
+    "Notre ambition est de créer une communauté où chacun peut participer, proposer des idées, rencontrer de nouvelles personnes et contribuer à des projets communs.",
+    "Pas besoin d'être en CCA, d'être en master ou de connaître tout le monde pour nous rejoindre : toutes les filières ont leur place !"
+  ],
+  "concretement": "Des événements pendant l'année, des projets qui évoluent selon les envies des étudiants, des rencontres professionnelles et, surtout, une association construite avec et pour les étudiants.",
+  "appel": "Tu as une idée de soirée, une envie de sortie, un projet à proposer ou simplement envie de participer ? Tu es le bienvenu !",
+  "contact": {
+    "email": "ccnamstrasbourg@gmail.com",
+    "instagram": "https://www.instagram.com/ccnamstrasbourg/",
+    "linkedin": "https://www.linkedin.com/in/c%E2%80%99cnam-association-bde-du-cnam-strasbourg-878aa235b/",
+    "adresse": "CNAM Strasbourg"
+  },
+  "adhesion": {
+    "texte": "Adhérer à C'CNAM Strasbourg, c'est soutenir la vie étudiante du CNAM et participer à tout ce qu'on organise pendant l'année.",
+    "prix": "5 €",
+    "lien": "",
+    "avantages": [
+      "Participer aux soirées, sorties et activités de l'année",
+      "Proposer tes idées et monter des projets avec nous",
+      "Rencontrer des professionnels et élargir ton réseau",
+      "Rejoindre une communauté ouverte à toutes les filières"
+    ]
+  },
+  "partenariat": {
+    "texte": "Vous êtes une entreprise, un commerce ou une structure strasbourgeoise ? Devenez partenaire de C'CNAM Strasbourg et allez à la rencontre des étudiants du CNAM, en formation initiale, en alternance ou en reprise d'études.",
+    "offres": [
+      "Visibilité auprès des étudiants de toutes les filières du CNAM",
+      "Présence lors de nos soirées, sorties et événements",
+      "Rencontres avec de futurs alternants, stagiaires et diplômés",
+      "Logo et présentation sur notre site et nos réseaux"
+    ]
+  },
+  "logo": "images/logo.png",
+  "photo_accueil": "images/batiment-cnam.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "evenements": [
+    {
+      "titre": "Soirée de rentrée (exemple)",
+      "date": "2026-11-14",
+      "heure": "20:00",
+      "lieu": "Strasbourg",
+      "description": "Exemple d'événement pour montrer la mise en page. Remplace-le par un vrai événement depuis l'espace d'administration.",
+      "image": "",
+      "lien": "",
+      "exemple": true
+    },
+    {
+      "titre": "Afterwork réseau (exemple)",
+      "date": "2026-12-05",
+      "heure": "18:30",
+      "lieu": "CNAM Strasbourg",
+      "description": "Exemple : une rencontre entre étudiants et professionnels pour échanger sur les métiers et les opportunités.",
+      "image": "",
+      "lien": "",
+      "exemple": true
+    }
+  ]
+}

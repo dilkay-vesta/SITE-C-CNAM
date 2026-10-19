@@ -1,0 +1,135 @@
+# Configuration de l'espace d'administration (Pages CMS : https://app.pagescms.org)
+media:
+  input: images
+  output: /images
+
+content:
+  - name: evenements
+    label: Événements
+    type: file
+    path: content/evenements.json
+    format: json
+    fields:
+      - name: evenements
+        label: Événements
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{titre} ({date})"
+        fields:
+          - { name: titre, label: Titre, type: string, required: true }
+          - { name: date, label: Date, type: date, required: true }
+          - { name: heure, label: "Heure (ex. 20:00)", type: string }
+          - { name: lieu, label: Lieu, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image, label: Affiche ou photo, type: image }
+          - { name: lien, label: "Lien d'inscription (optionnel)", type: string }
+          - { name: exemple, label: "Événement d'exemple (à décocher pour un vrai événement)", type: boolean }
+
+  - name: galerie
+    label: Galerie photos
+    type: file
+    path: content/galerie.json
+    format: json
+    fields:
+      - name: albums
+        label: Albums
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{titre}"
+        fields:
+          - { name: titre, label: "Nom de l'album", type: string, required: true }
+          - { name: date, label: Date, type: date }
+          - name: photos
+            label: Photos
+            type: object
+            list: true
+            fields:
+              - { name: src, label: Photo, type: image }
+              - { name: legende, label: Légende, type: string }
+
+  - name: partenaires
+    label: Partenaires
+    type: file
+    path: content/partenaires.json
+    format: json
+    fields:
+      - name: partenaires
+        label: Partenaires
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nom}"
+        fields:
+          - { name: nom, label: Nom, type: string, required: true }
+          - { name: type, label: "Type (ex. Partenaire, Sponsor)", type: string }
+          - { name: logo, label: Logo, type: image }
+          - { name: description, label: Description, type: text }
+          - { name: site, label: "Site internet (https://...)", type: string }
+
+  - name: equipe
+    label: Équipe
+    type: file
+    path: content/equipe.json
+    format: json
+    fields:
+      - name: membres
+        label: Membres du bureau
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nom} : {role}"
+        fields:
+          - { name: nom, label: "Prénom et nom", type: string, required: true }
+          - { name: role, label: Rôle, type: string }
+          - { name: photo, label: Photo, type: image }
+
+  - name: site
+    label: Textes et infos du site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: nom, label: "Nom de l'association", type: string }
+      - { name: slogan, label: Slogan, type: string }
+      - { name: accroche, label: "Phrase d'accroche (accueil)", type: string }
+      - { name: logo, label: Logo, type: image }
+      - { name: photo_accueil, label: "Photo de fond de l'accueil", type: image }
+      - { name: qui_sommes_nous, label: "Qui sommes-nous (un paragraphe par ligne)", type: text, list: true }
+      - name: objectifs
+        label: Nos objectifs
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+      - { name: vision, label: "Notre vision (un paragraphe par ligne)", type: text, list: true }
+      - { name: concretement, label: "Et concrètement ?", type: text }
+      - { name: appel, label: "Appel à participer", type: text }
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: email, label: E-mail, type: string }
+          - { name: instagram, label: "Lien Instagram", type: string }
+          - { name: linkedin, label: "Lien LinkedIn", type: string }
+          - { name: adresse, label: Adresse, type: string }
+      - name: adhesion
+        label: Adhésion
+        type: object
+        fields:
+          - { name: texte, label: Présentation, type: text }
+          - { name: prix, label: "Tarif (ex. 5 €)", type: string }
+          - { name: lien, label: "Lien pour adhérer (HelloAsso...)", type: string }
+          - { name: avantages, label: Avantages, type: string, list: true }
+      - name: partenariat
+        label: "Devenir partenaire"
+        type: object
+        fields:
+          - { name: texte, label: Présentation, type: text }
+          - { name: offres, label: "Ce qu'on propose", type: string, list: true }

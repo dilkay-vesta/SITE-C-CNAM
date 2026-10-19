@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>C'CNAM Strasbourg</title>
+<meta name="description" content="C'CNAM Strasbourg, le BDE du CNAM Strasbourg : événements, galerie photos, partenaires, équipe et adhésion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="images/favicon.png">
+</head>
+<body>
+<!--SITE-BODY-START-->
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#accueil" aria-label="C'CNAM Strasbourg, accueil">
+      <img class="brand-logo" src="images/logo.png" alt="">
+      <span class="brand-mark">C'CNAM</span><span class="brand-city">Strasbourg</span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#evenements">Événements</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#partenaires">Partenaires</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#contact">Contact</a>
+      <a href="#adhesion" class="nav-cta">Adhérer</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <section class="view" data-view="accueil"></section>
+  <section class="view" data-view="evenements" hidden></section>
+  <section class="view" data-view="galerie" hidden></section>
+  <section class="view" data-view="partenaires" hidden></section>
+  <section class="view" data-view="equipe" hidden></section>
+  <section class="view" data-view="contact" hidden></section>
+  <section class="view" data-view="adhesion" hidden></section>
+</main>
+
+<footer class="foot">
+  <div class="timber" aria-hidden="true"></div>
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-name">C'CNAM Strasbourg</p>
+      <p class="foot-sub">Le BDE du CNAM Strasbourg. Hopla !</p>
+    </div>
+    <nav class="foot-nav">
+      <a href="#evenements">Événements</a>
+      <a href="#partenaires">Devenir partenaire</a>
+      <a href="#adhesion">Adhérer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+<!--SITE-BODY-END-->
+<script src="assets/app.js"></script>
+</body>
+</html>

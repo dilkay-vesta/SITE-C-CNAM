@@ -1,0 +1,11 @@
+{
+  "membres": [
+    { "nom": "Andreas Isambert", "role": "Présidente", "photo": "" },
+    { "nom": "David Paris", "role": "Vice-président", "photo": "" },
+    { "nom": "Victoria Sarcanean", "role": "Secrétaire", "photo": "" },
+    { "nom": "Fabrice Caesar", "role": "Trésorier", "photo": "" },
+    { "nom": "Nadeen Parga", "role": "Assesseur", "photo": "" },
+    { "nom": "Baptiste Flesch", "role": "Responsable communication", "photo": "" },
+    { "nom": "Dilkay Islekter", "role": "Designer", "photo": "" }
+  ]
+}

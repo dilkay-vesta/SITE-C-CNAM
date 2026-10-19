@@ -1,0 +1,11 @@
+{
+  "partenaires": [
+    {
+      "nom": "Boehli",
+      "type": "Partenaire",
+      "logo": "images/partenaire-boehli.jpg",
+      "description": "Le fabricant alsacien de bretzels et biscuits apéritifs.",
+      "site": ""
+    }
+  ]
+}
