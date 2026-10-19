@@ -1,13 +1,9 @@
 {
   "evenements": [
     {
-      "titre": "🥨Le 1er Événement Arrive !!!🥨",
-      "date": "2026-12-01",
+      "titre": "🏗️",
+      "date": "2026-10-19",
       "heure": "18:30",
-      "lieu": "SURPRISE !🎉",
-      "description": "",
-      "image": "",
-      "lien": "",
       "exemple": false
     }
   ]
