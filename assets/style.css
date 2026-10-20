@@ -58,7 +58,7 @@ body::before {
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--band); color: var(--on-band); }
 .top-in { display: flex; align-items: center; gap: 24px; min-height: 68px; }
 .brand { display: flex; align-items: baseline; gap: 8px; text-decoration: none; margin-right: auto; }
-.brand-logo { height: 46px; width: auto; align-self: center; }
+.brand-logo { height: 54px; width: auto; align-self: center; }
 .brand-mark { font-family: var(--font-display); font-weight: 800; font-size: 26px; letter-spacing: -0.02em; color: #fff; }
 .brand-mark::first-letter { color: var(--red); }
 .brand-city { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--on-band); opacity: .7; }
