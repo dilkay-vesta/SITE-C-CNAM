@@ -234,6 +234,8 @@ body::before {
 .foot-in { padding-block: 36px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
 .foot-name { font-family: var(--font-display); font-weight: 800; font-size: 24px; }
 .foot-sub { opacity: .7; }
+.foot-legal { padding-block: 18px 28px; border-top: 1px solid rgba(255,255,255,.14); display: grid; gap: 4px; font-size: 13px; opacity: .7; }
+.foot-legal p { max-width: 90ch; }
 .foot-nav { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 .foot-nav a { text-decoration: none; font-weight: 600; opacity: .85; }
 .foot-nav a:hover { opacity: 1; text-decoration: underline; }
