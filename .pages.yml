@@ -127,6 +127,14 @@ content:
           - { name: prix, label: "Tarif (ex. 5 €)", type: string }
           - { name: lien, label: "Lien pour adhérer (HelloAsso...)", type: string }
           - { name: avantages, label: Avantages, type: string, list: true }
+      - name: mentions
+        label: Mentions légales
+        type: object
+        fields:
+          - { name: statut, label: "Statut (ex. Association inscrite au registre des associations)", type: string }
+          - { name: siege, label: "Adresse du siège", type: string }
+          - { name: immatriculation, label: "Numéro d'inscription ou RNA (optionnel)", type: string }
+          - { name: directeur, label: "Responsable de la publication", type: string }
       - name: partenariat
         label: "Devenir partenaire"
         type: object

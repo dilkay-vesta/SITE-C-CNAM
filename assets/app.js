@@ -3,7 +3,7 @@
 // (ou l'espace d'administration), jamais ce script.
 (function () {
   const FILES = ["site", "evenements", "partenaires", "equipe", "galerie"];
-  const VIEWS = ["accueil", "evenements", "galerie", "partenaires", "equipe", "contact", "adhesion"];
+  const VIEWS = ["accueil", "evenements", "galerie", "partenaires", "equipe", "contact", "adhesion", "mentions-legales"];
   const MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -234,6 +234,36 @@
           <p>Toutes les filières et tous les niveaux sont les bienvenus, que tu sois en formation initiale, en alternance ou en reprise d'études.</p>
           <div>${safeUrl(a.lien) ? `<a class="btn btn-red" href="${esc(a.lien)}" target="_blank" rel="noopener">J'adhère</a>` : `<span class="btn btn-line" aria-disabled="true">Lien d'adhésion bientôt disponible</span>`}</div>
         </div>
+      </div></div>`;
+    },
+
+    "mentions-legales"(c) {
+      const s = c.site;
+      const m = s.mentions || {};
+      const k = s.contact || {};
+      const val = (v, label) => (v ? esc(v) : todo(label));
+      return head("Informations", "Mentions légales") + `
+      <div class="wrap"><div class="prose legal">
+        <h2>Éditeur du site</h2>
+        <p>${esc(s.nom)}${m.statut ? ", " + esc(m.statut).toLowerCase() : ""}.</p>
+        <p>Siège : ${val(m.siege, "Adresse du siège")}</p>
+        ${m.immatriculation ? `<p>Numéro d'inscription : ${esc(m.immatriculation)}</p>` : ""}
+        <p>Contact : ${val(k.email, "E-mail")}</p>
+        <p>Responsable de la publication : ${val(m.directeur, "Responsable de la publication")}</p>
+
+        <h2>Conception et réalisation</h2>
+        <p>Site conçu et réalisé par Dilkay Islekter.</p>
+
+        <h2>Hébergement</h2>
+        <p>GitHub, Inc. (service GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Site : https://github.com</p>
+
+        <h2>Propriété intellectuelle</h2>
+        <p>Le design, la structure et le code du site sont la propriété de Dilkay Islekter. Toute reproduction, modification ou réutilisation, totale ou partielle, sans autorisation écrite de l'auteur est interdite.</p>
+        <p>Le logo, les textes et les photos appartiennent à ${esc(s.nom)} ou à leurs auteurs respectifs. Les logos des partenaires restent la propriété de leurs titulaires.</p>
+
+        <h2>Données personnelles</h2>
+        <p>Ce site ne collecte aucune donnée personnelle et n'utilise pas de cookies. Les polices de caractères sont chargées depuis Google Fonts, ce qui transmet l'adresse IP du visiteur à Google lors de l'affichage.</p>
+        <p>Pour toute question sur vos données ou pour demander le retrait d'une photo vous concernant, écrivez-nous à ${val(k.email, "E-mail")}.</p>
       </div></div>`;
     },
   };

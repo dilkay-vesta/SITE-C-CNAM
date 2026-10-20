@@ -229,6 +229,9 @@ body::before {
 .empty p { color: var(--muted); max-width: 56ch; }
 .todo { color: var(--muted); font-style: italic; font-weight: 500; }
 
+.legal h2 { font-size: 24px; margin: 18px 0 0; }
+.legal h2:first-child { margin-top: 0; }
+
 /* Pied de page */
 .foot { background: var(--band); color: var(--on-band); }
 .foot-in { padding-block: 36px 44px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
