@@ -18,6 +18,16 @@
   }
   function today() { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
 
+  // Les images envoyées depuis l'espace d'administration arrivent en "/images/Mon fichier #1.png" :
+  // on retire le "/" du début et on encode le nom (espaces, #, parenthèses) pour que l'image s'affiche.
+  function imagePath(v) {
+    const m = /^\/?images\/(.+)$/.exec(v);
+    if (!m) return v;
+    let name = m[1];
+    try { name = decodeURIComponent(name); } catch (e) {}
+    return "images/" + encodeURIComponent(name).replace(/[()']/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase());
+  }
+
   async function load() {
     if (window.SITE_CONTENT) return window.SITE_CONTENT;
     const out = {};
@@ -26,7 +36,7 @@
       try {
         const r = await fetch(`content/${f}.json`, { cache: "no-cache" });
         // L'espace d'administration enregistre les images en "/images/..." : on les rend relatives.
-        out[f] = JSON.parse(await r.text(), (k, v) => (typeof v === "string" && v.startsWith("/images/") ? v.slice(1) : v)) || {};
+        out[f] = JSON.parse(await r.text(), (k, v) => (typeof v === "string" ? imagePath(v) : v)) || {};
       } catch (e) {
         console.warn(`content/${f}.json illisible`, e);
         out[f] = {};
