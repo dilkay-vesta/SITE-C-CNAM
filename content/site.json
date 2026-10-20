@@ -2,6 +2,8 @@
   "nom": "C'CNAM Strasbourg",
   "slogan": "On étudie, on se rencontre, on crée du réseau et on profite. Hopla !",
   "accroche": "L'association étudiante du CNAM Strasbourg, ouverte à toutes les filières.",
+  "logo": "/images/Log Final #3 Sans FOND.png",
+  "photo_accueil": "/images/batiment-cnam.jpg",
   "qui_sommes_nous": [
     "C'CNAM Strasbourg est l'association étudiante du CNAM Strasbourg. Notre objectif est simple : améliorer la vie étudiante, sur le campus comme en dehors, et faire en sorte que les années d'études soient aussi l'occasion de créer des souvenirs, des rencontres et des opportunités.",
     "Ouverte à toutes les filières du CNAM, l'association souhaite rassembler les étudiants, peu importe leur formation ou leur niveau d'études. Parce qu'entre les cours, le travail et l'alternance, on mérite aussi de profiter de la vie étudiante !"
@@ -36,7 +38,6 @@
   "adhesion": {
     "texte": "Adhérer à C'CNAM Strasbourg, c'est soutenir la vie étudiante du CNAM et participer à tout ce qu'on organise pendant l'année.",
     "prix": "5 €",
-    "lien": "",
     "avantages": [
       "Participer aux soirées, sorties et activités de l'année",
       "Proposer tes idées et monter des projets avec nous",
@@ -52,7 +53,5 @@
       "Rencontres avec de futurs alternants, stagiaires et diplômés",
       "Logo et présentation sur notre site et nos réseaux"
     ]
-  },
-  "logo": "images/logo.png",
-  "photo_accueil": "images/batiment-cnam.jpg"
+  }
 }
