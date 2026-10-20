@@ -33,7 +33,7 @@
     "email": "ccnamstrasbourg@gmail.com",
     "instagram": "https://www.instagram.com/ccnamstrasbourg/",
     "linkedin": "https://www.linkedin.com/in/c%E2%80%99cnam-association-bde-du-cnam-strasbourg-878aa235b/",
-    "adresse": "CNAM Strasbourg"
+    "adresse": "Parc des Forges, 23 Rue Jacobi-Netter Bât B56, 67200 Strasbourg"
   },
   "adhesion": {
     "texte": "Adhérer à C'CNAM Strasbourg, c'est soutenir la vie étudiante du CNAM et participer à tout ce qu'on organise pendant l'année.",
@@ -45,6 +45,11 @@
       "Rejoindre une communauté ouverte à toutes les filières"
     ]
   },
+  "mentions": {
+    "statut": "Association étudiante",
+    "siege": "Parc des Forges, 23 Rue Jacobi-Netter Bât B56, 67200 Strasbourg",
+    "directeur": "Dilkay Islekter, designer du bureau de l'association"
+  },
   "partenariat": {
     "texte": "Vous êtes une entreprise, un commerce ou une structure strasbourgeoise ? Devenez partenaire de C'CNAM Strasbourg et allez à la rencontre des étudiants du CNAM, en formation initiale, en alternance ou en reprise d'études.",
     "offres": [
@@ -53,11 +58,5 @@
       "Rencontres avec de futurs alternants, stagiaires et diplômés",
       "Logo et présentation sur notre site et nos réseaux"
     ]
-  },
-  "mentions": {
-    "statut": "Association étudiante",
-    "siege": "",
-    "immatriculation": "",
-    "directeur": "Dilkay Islekter, designer du bureau de l'association"
   }
 }
