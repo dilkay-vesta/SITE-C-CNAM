@@ -1,3 +1,14 @@
 {
-  "albums": []
+  "albums": [
+    {
+      "titre": "Aa",
+      "date": "2026-10-24",
+      "photos": [
+        {
+          "src": "/images/IMG_20261016_205151.jpg",
+          "legende": "Xx"
+        }
+      ]
+    }
+  ]
 }
