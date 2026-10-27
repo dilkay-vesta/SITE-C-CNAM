@@ -1,0 +1,13 @@
+{
+  "albums": [
+    {
+      "titre": "Partenariat Boehli",
+      "date": "2026-10-27",
+      "photos": [
+        {
+          "src": "/images/Image présentation-1.jpeg"
+        }
+      ]
+    }
+  ]
+}
